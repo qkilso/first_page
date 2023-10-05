@@ -1,0 +1,227 @@
+/* 
+dark background color (hero and footer) : #1F2937 
+
+Hero Main text ("this website is awesome") : 40px extra-bold
+ #F9FAF8
+
+Hero secondary text, Header link text : 18px #E5E7EB
+
+Header logo text : 24px #F9FAF8
+
+Button color, call to action background color : #3882F6
+
+information header text : 36px extra-bold #1F2937
+
+Quote section background color : #E5E7EB
+
+Quote text : 36px light italic #1F2937
+*/
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #1f2937;
+    color: white;
+    padding: 1% 16%;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-header ul{
+    list-style-type: none;
+    justify-content: space-between;
+    display: flex;
+    gap: 18px;
+    font-size: 25px;
+}
+
+.header .logo{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.hero .left-content {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5%;
+    flex-grow: 0;
+}
+
+.hero .left-content h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #F9FAF8;
+    margin: 0;
+}
+
+.hero p{
+    font-size: 26px;
+}
+
+
+.hero .right-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    padding: 6% 15%;
+}
+
+p {
+    flex-shrink: 0;
+}
+
+#sign-up {
+    display: flex;
+    flex-shrink: 0;
+    color: white;
+    font-size: 18px;
+    padding: 10px 40px;
+    border-radius: 6px;
+    border: #3399ff;
+    background-color: #3882F6;
+    width: fit-content;
+    height: fit-content;
+}
+
+.section.boxes {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 25%;
+    
+}
+
+.section.boxes .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+
+
+.section.boxes .box-one,
+.box-two,
+.box-three,
+.box-four {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    margin: 0px;
+    border-radius: 10px;
+    border: blue solid 5px;
+}
+
+.section.boxes p {
+    margin: 10px;
+    flex-basis: 50px;
+}
+
+#box {
+    width: fit-content;
+    height: fit-content;
+}
+
+.section.quote {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 25%;
+    background-color: lightgray;
+}
+
+.section.quote h2 {
+    font-size: 45px;
+    font-weight: 100;
+    font-style: italic;
+    color: gray;
+    margin: 0;
+}
+
+.section.quote h3 {
+    align-self: flex-end;
+    padding: 10px;
+    font-size: 24px;
+    margin: 0;
+}
+
+.section.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.section.banner .advertisement {
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    width: 1300px;
+    height: 200px;
+}
+
+.section.banner .left-side {
+    color: white;
+}
+
+.section.banner h3 {
+    font-size: 24px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: bolder;
+}
+
+.section.banner p {
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+    color: lightgray;
+}
+
+.advertisement .right-side button {
+  
+    display: flex;
+    flex-shrink: 0;
+    color: white;
+    font-size: 18px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: solid;
+    background-color: #3882F6;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.footer {
+    background-color: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+.footer p {
+    color: white;
+    font-size: 24px;
+}
